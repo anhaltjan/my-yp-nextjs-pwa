@@ -1,0 +1,28 @@
+.aboutBio {
+  margin-block-start: 1em;
+}
+
+.bioHeader {
+  font-size: xx-large;
+  max-width: 35ch;
+}
+
+.bioHeader::first-letter {
+  color: var(--primary-400);
+}
+
+.aboutBio p {
+  max-width: 60ch;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.aboutBio p .textIcon {
+  font-size: xx-large;
+}
+
+.redText {
+  color: rgb(255, 0, 89);
+  letter-spacing: 1.5px;
+  font-size: large;
+}

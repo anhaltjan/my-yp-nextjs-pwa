@@ -1,0 +1,38 @@
+.updates {
+  display: grid;
+  list-style: none;
+  gap: 1em;
+  margin-block-start: 1em;
+}
+
+.card {
+  width: 100%;
+
+  padding: 1em;
+
+  color: var(--grey-800);
+  background: var(--primary-400);
+  border-radius: 10px;
+}
+
+.card time {
+  font-weight: 600;
+}
+
+.card p {
+  text-align: justify;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .updates {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
