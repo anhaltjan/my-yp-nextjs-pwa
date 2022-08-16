@@ -66,7 +66,8 @@ body {
 /* MAIN CONTENT */
 
 .title-wrap {
-  padding-block-start: 1rem;
+  padding-block: 1rem;
+  border-bottom: var(--grey-700) 1px solid;
 }
 
 .page-title::first-letter {
@@ -112,10 +113,9 @@ body {
 }
 
 .card {
-  background-color: var(--grey-800);
+  background-color: var(--grey-900);
   border-radius: 10px;
-  border-bottom: var(--grey-700) 1px solid;
-  border-left: var(--grey-700) 1px solid;
+  border: 0.5px solid var(--grey-700);
 }
 
 .card .top,
@@ -130,8 +130,13 @@ body {
   justify-content: space-between;
 }
 
+.card .top .card-header {
+  text-transform: uppercase;
+  font-size: medium;
+}
+
 .card .top .card-header::first-letter {
-  font-size: larger;
+  font-size: x-large;
   color: var(--primary-400);
 }
 
@@ -297,9 +302,21 @@ option:first:focus {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 600px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -317,7 +334,7 @@ option:first:focus {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1536px) {
   .list {
     grid-template-columns: repeat(3, 1fr);
   }

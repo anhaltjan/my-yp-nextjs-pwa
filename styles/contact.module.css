@@ -1,0 +1,91 @@
+/* CONTACT COMPONENT */
+
+.contact-content {
+  background-color: var(--grey-900);
+}
+
+.contact-content ul {
+  list-style: none;
+  padding-block: 1rem;
+}
+
+.contact-content ul li::before {
+  content: '\2022';
+  color: var(--primary-400);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-block: 0.25rem;
+}
+
+.imgContainer {
+  display: grid;
+  gap: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-block: 1rem;
+}
+
+.imgWrap {
+  width: 100%;
+  max-width: 300px;
+}
+
+.imgWrap img {
+  border-radius: 10px;
+}
+.contactContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formChild {
+  margin-block: 0.5rem;
+}
+
+.formInput {
+  background: var(--black);
+  color: var(--grey-500);
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--grey-700);
+  border-radius: 5px;
+}
+
+.exampleList::placeholder {
+  color: var(--grey-500);
+}
+
+.contact-content form option:first {
+  color: var(--grey-800);
+}
+
+.form-input:hover {
+  border-color: var(--primary-500);
+  border-style: dotted;
+}
+
+.exampleList option:first:focus {
+  border-color: var(--grey-050);
+  border-style: solid;
+}
+
+.form-info {
+  display: flex;
+}
+
+.form-button {
+  display: block;
+  background: var(--primary-400);
+  color: var(--grey-900);
+  width: 100%;
+  font-size: medium;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.form-button:hover {
+  background-color: var(--primary-500);
+  text-decoration: underline;
+}

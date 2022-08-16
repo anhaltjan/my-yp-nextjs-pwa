@@ -13,10 +13,13 @@
   text-transform: uppercase;
   margin-left: 1rem;
   font-weight: 800;
+  font-size: x-large;
+  letter-spacing: 1.5px;
 }
 
 .brand h1 .greenText {
   color: var(--primary-400);
+  font-size: xx-large;
 }
 
 .brand h1:hover {
@@ -24,16 +27,15 @@
 }
 
 .navigation {
+  padding-block-start: 1rem;
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
 .navigation a {
+  text-transform: ;
   margin-inline: 1rem;
-}
-
-.navigation a {
   color: var(--grey-300);
   padding-bottom: 0.25rem;
 }

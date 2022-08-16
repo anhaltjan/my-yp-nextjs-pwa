@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Title from '../components/Title'
 import styles from '../styles/about.module.css'
 
@@ -62,7 +63,12 @@ const About = () => {
           <strong>Jan Anhalt</strong>
         </p>
         <br />
-        <h3 className={styles.bioHeader}>Wait, Who&apos;s Jan?</h3>
+        <div className={styles.janIntroTitle}>
+          <span className={styles.imgWrap}>
+            <Image src='/images/jan.png' alt='Jan' width={50} height={50} />
+          </span>
+          <h3 className={styles.bioHeader}>Wait, Who&apos;s Jan?</h3>
+        </div>
         <p>
           Honestly, I prefer to talk to you all. Please watch the video below!
         </p>

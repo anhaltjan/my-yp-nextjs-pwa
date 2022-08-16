@@ -1,40 +1,35 @@
 import Image from 'next/image'
 import Jan from '../public/images/jan.png'
 import Kemmy from '../public/images/kemmy.png'
+import Title from './Title'
 
-const imageStyle = {
-  borderRadius: '10px',
-  borderStyle: 'dotted',
-  borderColor: '#01eb00',
-  borderWidth: '1px',
-}
+import styles from '../styles/contact.module.css'
 
 const Contact = () => {
   return (
     <>
-      <div className='contact-img_container'>
-        <div className='contact-img_wrap'>
+      <Title title='Talk to us! 👋' subtitle="We're here for you" />
+      <div className={styles.imgContainer}>
+        <div className={styles.imgWrap}>
           <Image
-            style={imageStyle}
             width={200}
             height={200}
             src={Jan}
+            layout='responsive'
             alt='Picture of Jan'
           />
         </div>
-        <div className='contact-img_wrap'>
+        <div className={styles.imgWrap}>
           <Image
-            style={imageStyle}
             width={200}
             height={200}
             src={Kemmy}
+            layout='responsive'
             alt='Picture of Kemmy'
           />
         </div>
       </div>
-
-      <h2>👋 Talk to us! 👋</h2>
-      <ul>
+      <ul className={styles.exampleList}>
         <li>If you have a question small or big</li>
         <li>If you can&apos;t find a location in Tokyo</li>
         <li>If you have any location recommendations let us know</li>
