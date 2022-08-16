@@ -52,11 +52,21 @@
 
 .formInput {
   background: var(--black);
-  color: var(--grey-500);
+  font-size: 0.9rem;
+  color: var(--grey-600);
   border: 1px solid var(--grey-700);
   border-radius: 10px;
   padding-block: 0.75em;
   padding-inline: 0.5rem;
+}
+
+.textArea {
+  font-size: 1rem;
+  color: var(--grey-050);
+}
+
+.formInput:hover {
+  border: 1px var(--primary-400) dotted;
 }
 
 .contact-content form option:first {

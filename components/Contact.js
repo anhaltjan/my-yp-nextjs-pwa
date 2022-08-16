@@ -135,7 +135,7 @@ const Contact = () => {
           </select>
 
           <textarea
-            className={`${styles.formChild} ${styles.formInput}`}
+            className={`${styles.textArea} ${styles.formChild} ${styles.formInput}`}
             name='message'
             id=''
             cols='30'

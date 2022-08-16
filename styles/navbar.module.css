@@ -1,7 +1,8 @@
 .header {
-  background-color: var(--black);
+  background-color: var(--grey-900);
   padding-inline: 2rem;
   padding-block: 1rem;
+  border-bottom: 1px solid var(--grey-800);
 }
 
 .brand {
@@ -34,14 +35,13 @@
 }
 
 .navigation a {
-  text-transform: ;
   margin-inline: 1rem;
   color: var(--grey-300);
   padding-bottom: 0.25rem;
 }
 
 .nonActive {
-  border-bottom: dotted 1px #000;
+  border-bottom: dotted 1px var(--grey-900);
 }
 
 .active {
