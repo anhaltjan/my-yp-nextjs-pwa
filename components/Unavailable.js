@@ -1,4 +1,5 @@
 import styles from '../styles/unavailable.module.css'
+import Link from 'next/link'
 const Unavailable = () => {
   return (
     <li className={styles.unavailable}>
@@ -12,11 +13,14 @@ const Unavailable = () => {
       <h2>Awwe.. Sorry, nothing has been found😭 </h2>
       <br />
       <p>
-        <span>But! You can right this wrong!</span> If you know any locations
-        please contact us <span>RIGHT NOW!!</span>😘👍
+        <span>But! You can right this wrong!</span> Become a{' '}
+        <span className={styles.yp}>YP</span> teammate, share locations that
+        offer services in English.{' '}
+        <Link href='#contact'>
+          <a className={styles.contactLink}> be a team player</a>
+        </Link>
+        😘👍
       </p>
-      <br />
-      <hr />
     </li>
   )
 }

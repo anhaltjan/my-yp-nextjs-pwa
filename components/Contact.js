@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Title title='Talk to us! 👋' subtitle="We're here for you" />
-      <div className={styles.contactContent}>
+      <div id='contact' className={styles.contactContent}>
         <div className={styles.imgContainer}>
           <div className={styles.imgWrap}>
             <Image
