@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Title from '../components/Title'
-import LocationCard from '../components/LocationCard'
+import Card from '../components/Card'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         />
 
         <ul className='list'>
-          <LocationCard
+          <Card
             location='Tokyo'
             amount='24'
             image='/images/tokyo.jpg'

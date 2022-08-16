@@ -1,0 +1,42 @@
+.card {
+  background-color: var(--grey-900);
+  border-radius: 10px;
+  border: 0.5px solid var(--grey-700);
+}
+
+.card .top,
+.card .bottom {
+  padding-block: 1em;
+  padding-inline: 1em;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .top .card-header {
+  text-transform: uppercase;
+  font-size: medium;
+}
+
+.card .top .card-header::first-letter {
+  font-size: x-large;
+  color: var(--primary-400);
+}
+
+.locationAmt {
+  font-size: smaller;
+  font-style: italic;
+  color: var(--grey-300);
+}
+
+.bottom {
+  padding: 0.25rem;
+}
+
+.card .bottom a:hover {
+  color: var(--grey-050);
+  border: 1px dotted var(--primary-400);
+}
