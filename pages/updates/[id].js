@@ -1,3 +1,5 @@
+import { MDXProvider } from '@mdx-js/react'
+
 import { getAllUpdateIds, getUpdateData } from '../../lib/updates'
 
 export default function Update({ updateData }) {
