@@ -1,38 +1,48 @@
-.updates {
+.list {
   display: grid;
   list-style: none;
   gap: 1em;
-  margin-block-start: 1em;
 }
 
 .card {
-  width: 100%;
-
-  padding: 1em;
-
-  color: var(--grey-800);
-  background: var(--primary-400);
+  color: var(--grey-100);
+  background: var(--grey-800);
+  border: 1px inset var(--grey-700);
   border-radius: 10px;
+}
+
+.textContain {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  justify-items: flex-start;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.cta {
+  font-size: 2.5rem;
+  padding-inline-end: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card a {
+  color: var(--grey-100);
+}
+.card a:hover {
+  color: var(--primary-400);
+}
+
+.card:hover {
+  border: 1px dotted var(--primary-400);
 }
 
 .card time {
   font-weight: 600;
-}
-
-.card p {
-  text-align: justify;
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
-  .updates {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1400px) {
 }

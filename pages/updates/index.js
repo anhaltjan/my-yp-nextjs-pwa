@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Title from '../../components/Title'
 import { getSortedUpdatesData } from '../../lib/updates'
 
+import styles from '../../styles/updates.module.css'
+
 export default function Updates({ allUpdatesData }) {
   return (
     <>
@@ -10,14 +12,18 @@ export default function Updates({ allUpdatesData }) {
       </Head>
       <Title title='Updates' subtitle='Amazing updates here at YouPoint!' />
 
-      <ul>
+      <ul className={`list`}>
         {allUpdatesData.map(({ id, date, title }) => (
-          <li key={id}>
-            <h5>{title}</h5>
-            <br />
-            <p>{date}</p>
-            <br />
-            <p>{id}</p>
+          <li key={id} className={styles.card}>
+            <a href={`updates/${id}`}>
+              <div className={styles.textContain}>
+                <div className={styles.cta}>{id}</div>
+                <div className={styles.info}>
+                  <h3>{title}</h3>
+                  <time dateTime={date}>{date}</time>
+                </div>
+              </div>
+            </a>
           </li>
         ))}
       </ul>
