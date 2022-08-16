@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: var(--grey-800);
   display: flex;
   flex-direction: column;
@@ -13,21 +13,21 @@ footer .copyright {
   font-size: small;
 }
 
-footer .sns-container {
+footer .snsContainer {
   display: flex;
   list-style: none;
   margin-block-start: 1em;
 }
 
-.sns-container a {
+.snsContainer a {
   color: var(--primary-400);
 }
 
-.sns-container a:hover {
+.snsContainer a:hover {
   color: var(--primary-500);
   border-bottom: 1px dotted var(--primary-400);
 }
 
-.sns-container li {
+.snsContainer li {
   margin-inline: 1rem;
 }

@@ -18,7 +18,10 @@ const Navbar = () => {
               src='/images/y_logo_green_200x200.png'
               alt='YouPoint logo'
             />
-            <h1>YouPoint.io</h1>
+            <h1>
+              <span className={styles.greenText}>Y</span>ou
+              <span className={styles.greenText}>P</span>oint.io
+            </h1>
           </a>
         </Link>
 

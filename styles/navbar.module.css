@@ -9,7 +9,7 @@
 }
 
 .brand h1 {
-  color: var(--grey-100);
+  color: var(--grey-300);
   text-transform: uppercase;
   margin-left: 1rem;
   font-weight: 800;
@@ -17,6 +17,10 @@
 
 .brand h1 .greenText {
   color: var(--primary-400);
+}
+
+.brand h1:hover {
+  color: var(--grey-100);
 }
 
 .navigation {
@@ -30,7 +34,7 @@
 }
 
 .navigation a {
-  color: #fff;
+  color: var(--grey-300);
   padding-bottom: 0.25rem;
 }
 
