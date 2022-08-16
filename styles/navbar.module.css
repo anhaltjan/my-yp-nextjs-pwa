@@ -1,0 +1,47 @@
+.header {
+  background-color: var(--black);
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand h1 {
+  color: var(--grey-100);
+  text-transform: uppercase;
+  margin-left: 1rem;
+  font-weight: 800;
+}
+
+.brand h1 .greenText {
+  color: var(--primary-400);
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navigation a {
+  margin-inline: 1rem;
+}
+
+.navigation a {
+  color: #fff;
+  padding-bottom: 0.25rem;
+}
+
+.nonActive {
+  border-bottom: dotted 1px #000;
+}
+
+.active {
+  border-bottom: 1px solid #01eb00;
+}
+
+.navigation a:hover {
+  border-bottom: dotted 1px var(--primary-400);
+}

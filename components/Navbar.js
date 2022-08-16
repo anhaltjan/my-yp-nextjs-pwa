@@ -1,42 +1,53 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import styles from '../styles/navbar.module.css'
 import { useRouter } from 'next/router'
 const Navbar = () => {
   const router = useRouter()
   const currentRoute = router.pathname
 
   return (
-    <header>
-      <div className='banner'></div>
+    <header className={styles.header}>
+      <div className={styles.banner}></div>
       <div>
         <Link href='/'>
-          <a className='brand'>
+          <a className={styles.brand}>
             <Image
               width={50}
               height={50}
-              src='/grn_background.png'
+              src='/images/y_logo_green_200x200.png'
               alt='YouPoint logo'
             />
             <h1>YouPoint.io</h1>
           </a>
         </Link>
 
-        <nav className='navigation'>
+        <nav className={styles.navigation}>
           <Link href='/'>
-            <a className={currentRoute === '/' ? 'active' : 'non-active'}>
+            <a
+              className={
+                currentRoute === '/' ? styles.active : styles.nonActive
+              }
+            >
               Home
             </a>
           </Link>
 
           <Link href='/about'>
-            <a className={currentRoute === '/about' ? 'active' : 'non-active'}>
+            <a
+              className={
+                currentRoute === '/about' ? styles.active : styles.nonActive
+              }
+            >
               About
             </a>
           </Link>
 
           <Link href='/updates'>
             <a
-              className={currentRoute === '/updates' ? 'active' : 'non-active'}
+              className={
+                currentRoute === '/updates' ? styles.active : styles.nonActive
+              }
             >
               Updates
             </a>
@@ -44,40 +55,13 @@ const Navbar = () => {
 
           <a
             href='https://youpointofficial.wordpress.com/'
-            className={currentRoute === '/blog' ? 'active' : 'non-active'}
+            className={
+              currentRoute === '/blog' ? styles.active : styles.nonActive
+            }
             target={`_blank`}
           >
             Blog
           </a>
-
-          <style jsx global>{`
-            .navigation {
-              display: flex;
-              list-style: none;
-              justify-content: center;
-            }
-
-            .navigation a {
-              margin-inline: 1rem;
-            }
-
-            .navigation a {
-              color: #fff;
-              padding-bottom: 0.25rem;
-            }
-
-            .non-active {
-              border-bottom: dotted 1px #000;
-            }
-
-            .active {
-              border-bottom: 1px solid #01eb00;
-            }
-
-            .navigation a:hover {
-              border-bottom: dotted 1px var(--primary-400);
-            }
-          `}</style>
         </nav>
       </div>
     </header>
