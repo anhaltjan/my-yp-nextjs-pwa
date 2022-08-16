@@ -1,18 +1,23 @@
-import { MDXProvider } from '@mdx-js/react'
+import Title from '../../components/Title'
+import Link from 'next/link'
 
 import { getAllUpdateIds, getUpdateData } from '../../lib/updates'
 
+import styles from '../../styles/updatePage.module.css'
+
 export default function Update({ updateData }) {
   return (
-    <div>
-      <h2>{updateData.title}</h2>
-      <br />
-      {updateData.id}
-      <br />
-      {updateData.date}
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: updateData.contentHtml }} />
-    </div>
+    <>
+      <div className={styles.updatePage}>
+        <Title title={`Update ${updateData.id}`} subtitle={updateData.title} />
+        <div className={styles.contentWrap}>
+          <div dangerouslySetInnerHTML={{ __html: updateData.contentHtml }} />
+        </div>
+      </div>
+      <Link href='/updates'>
+        <a className='secondaryBtn fitToContent'>Go back</a>
+      </Link>
+    </>
   )
 }
 

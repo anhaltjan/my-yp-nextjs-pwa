@@ -31,6 +31,7 @@ export default function Updates({ allUpdatesData }) {
   )
 }
 
+
 export async function getStaticProps() {
   const allUpdatesData = getSortedUpdatesData()
   return {

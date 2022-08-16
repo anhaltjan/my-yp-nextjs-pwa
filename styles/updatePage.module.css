@@ -1,0 +1,6 @@
+.contentWrap {
+  padding-block: 2rem;
+  max-width: 60ch;
+  line-height: 30px;
+  text-align: justify;
+}

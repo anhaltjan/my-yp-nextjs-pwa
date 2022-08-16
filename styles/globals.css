@@ -29,7 +29,7 @@
   text-align: center;
   background: var(--primary-400);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-block: 0.65em;
   padding-inline: 1rem;
 }
@@ -48,7 +48,7 @@
   text-align: center;
   background: none;
   border: 1px solid var(--grey-100);
-  border-radius: 10px;
+  border-radius: 5px;
   padding-block: 0.65em;
   padding-inline: 1rem;
 }

@@ -44,41 +44,40 @@ const About = () => {
           expats we need more help to live successful and fulfilling lives
           overseas.
         </p>
-        <br />
+
         <p>So, I need your help because,this is a team effort.</p>
-        <br />
+
         <p>Please join me and let&apos;s help make Japan</p>
-        <br />
+
         <p>Even better</p>
-        <br />
+
         <p>
           <strong className={styles.redText}>Together</strong>
         </p>
-        <br />
+
         <p>
           <strong>よろしくお願いいたします。</strong>
         </p>
-        <br />
+
         <p>
           <strong>Jan Anhalt</strong>
         </p>
-        <br />
-        <div className={styles.janIntroTitle}>
-          <span className={styles.imgWrap}>
-            <Image src='/images/jan.png' alt='Jan' width={50} height={50} />
-          </span>
-          <h3 className={styles.bioHeader}>Wait, Who&apos;s Jan?</h3>
+
+        <div className={styles.imgWrap}>
+          <Image src='/images/jan.png' alt='Jan' width={50} height={50} />
         </div>
+        {/*   <h3 className={styles.bioHeader}>Wait, Who&apos;s Jan?</h3>
+
         <p>
           Honestly, I prefer to talk to you all. Please watch the video below!
-        </p>
+        </p> */}
         <br />
         {/* EMBED VIDEO HERE */}
-        <p>
+        {/*  <p>
           Now that you have seen my beautiful face; please message me If you
           have any questions or need information on living in Japan! Give me at
           most 24 hours to get back to you!
-        </p>
+        </p> */}
       </div>
     </>
   )

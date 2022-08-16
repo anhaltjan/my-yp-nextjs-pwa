@@ -1,23 +1,14 @@
-export const getStaticProps = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users')
-  const data = await res.json()
-  return {
-    props: { wards: data },
-  }
-}
+import Title from '../../components/Title'
+import Unavailable from '../../components/Unavailable'
 
-const Tokyo = ({ wards }) => {
+const Tokyo = () => {
   return (
-    <div>
-      <h1>Wards in Tokyo</h1>
-      {wards.map((ward) => (
-        <div key={ward.id}>
-          <a className=''>
-            <h3>{ward.name}</h3>
-          </a>
-        </div>
-      ))}
-    </div>
+    <>
+      <Title title='Tokyo' subtitle='Areas Available' />
+      <ul className='list'>
+        <Unavailable />
+      </ul>
+    </>
   )
 }
 
