@@ -2,10 +2,12 @@ import Image from 'next/image'
 import styles from '../styles/sideBar.module.css'
 import Jan from '../public/images/jan.png'
 import Kemmy from '../public/images/kemmy.png'
+import Sns from './Sns'
 
 const Sidebar = () => {
   return (
-    <div className={styles.contactContent}>
+    <section>
+      <Sns />
       <div className={styles.imgContainer}>
         <div className={styles.imgWrap}>
           <Image
@@ -32,7 +34,7 @@ const Sidebar = () => {
         <li>If you have any location recommendations let us know</li>
         <li>We want to get to know you! Let&apos;s chat! </li>
       </ul>
-    </div>
+    </section>
   )
 }
 
