@@ -9,10 +9,6 @@ const Layout = ({ children }) => {
       <Navbar />
       <main className='main-content'>
         <section className='page-content'>{children}</section>
-
-        <section className='contact-content'>
-          <Sidebar />
-        </section>
       </main>
 
       <Footer />
