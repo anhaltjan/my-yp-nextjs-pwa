@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Title from '../../components/Title'
 import Unavailable from '../../components/Unavailable'
 import Card from '../../components/Card'
+import ReturnButton from '../../components/ReturnButton'
 
 const Tokyo = () => {
   return (
@@ -9,6 +10,7 @@ const Tokyo = () => {
       <Head>
         <title>YouPoint〘 Tokyo 東京都 〙</title>
       </Head>
+      <ReturnButton />
       <Title title='Tokyo' subtitle='Areas Available' />
       <ul className='list'>
         <Card
