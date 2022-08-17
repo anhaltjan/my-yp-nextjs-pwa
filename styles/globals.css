@@ -137,14 +137,14 @@ body {
 
 .all-content {
   display: grid;
-  grid-auto-flow: row;
-  height: 100vh;
+  grid-template-rows: auto 100% auto;
 }
 
 .main-content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 1rem 2rem;
+  gap: 2rem;
+  padding-inline: 2rem;
 }
 
 /* search listings*/
@@ -152,12 +152,10 @@ body {
 /* CITIES & WARDS */
 
 .list {
-  margin-block-start: 2rem;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  height: 100%;
-  gap: 4em;
+  gap: 2rem;
 }
 
 /* WARD LISTING & LISTINGS */
@@ -240,6 +238,7 @@ body {
 
   .list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .page-content {
