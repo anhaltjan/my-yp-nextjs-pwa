@@ -10,16 +10,16 @@
 }
 
 .brand h1 {
-  color: var(--grey-300);
+  color: var(--grey-900);
   text-transform: uppercase;
   margin-left: 1rem;
   font-weight: 800;
   font-size: x-large;
   letter-spacing: 1.5px;
+  -webkit-text-stroke: #01eb00 1px;
 }
 
 .brand h1 .greenText {
-  color: var(--primary-400);
   font-size: xx-large;
 }
 

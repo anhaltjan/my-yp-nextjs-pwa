@@ -5,6 +5,7 @@
   border: 1px solid var(--grey-700);
   border-spacing: 0;
   height: 100%;
+  margin: 2rem;
 }
 
 .name {
