@@ -156,7 +156,8 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2em;
+  height: 100%;
+  gap: 4em;
 }
 
 /* WARD LISTING & LISTINGS */
