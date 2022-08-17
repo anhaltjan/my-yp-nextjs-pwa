@@ -1,6 +1,7 @@
 import Footer from './Footer'
 import Navbar from './Navbar'
-import Contact from './Contact'
+
+import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
         <section className='page-content'>{children}</section>
 
         <section className='contact-content'>
-          <Contact />
+          <Sidebar />
         </section>
       </main>
 

@@ -56,6 +56,16 @@ const Navbar = () => {
             </a>
           </Link>
 
+          <Link href='/contact'>
+            <a
+              className={
+                currentRoute === '/contact' ? styles.active : styles.nonActive
+              }
+            >
+              Contact
+            </a>
+          </Link>
+
           <a
             href='https://youpointofficial.wordpress.com/'
             className={
