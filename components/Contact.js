@@ -39,6 +39,7 @@ const Contact = () => {
 
         <form
           id='form'
+          name='contact'
           className={`${styles.form}`}
           data-netlify='true'
           method={`POST`}
