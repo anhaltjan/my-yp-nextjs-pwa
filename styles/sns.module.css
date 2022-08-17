@@ -1,0 +1,31 @@
+.snsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin-block-start: 1em;
+  background-color: var(--grey-800);
+  border-radius: 10px;
+}
+
+.snsContainer a {
+  display: flex;
+  color: var(--grey-100);
+  padding: 1rem;
+  border-bottom: 1px solid var(--grey-800);
+}
+
+.snsContainer a:hover {
+  color: var(--primary-500);
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px dotted var(--primary-400);
+}
+
+.snsContainer li {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

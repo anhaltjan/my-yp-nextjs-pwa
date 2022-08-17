@@ -16,7 +16,7 @@ const Tokyo = () => {
       <ul className='list'>
         <Card
           location='Minato City 港区'
-          amount='2'
+          amount='2 locations'
           image='/images/minato-city.jpg'
           link='/tokyo/minato'
         />

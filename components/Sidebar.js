@@ -1,10 +1,15 @@
 import Image from 'next/image'
-import styles from '../styles/contact.module.css'
+import styles from '../styles/sideBar.module.css'
 import Jan from '../public/images/jan.png'
 import Kemmy from '../public/images/kemmy.png'
+import Sns from './sns'
+import NewContent from './NewContent'
+
 const Sidebar = () => {
   return (
-    <div id='contact' className={styles.contactContent}>
+    <div className={styles.contactContent}>
+      {/* <NewContent /> */}
+      <Sns />
       <div className={styles.imgContainer}>
         <div className={styles.imgWrap}>
           <Image

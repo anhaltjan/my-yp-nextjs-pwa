@@ -8,9 +8,7 @@ const LocationCard = (props) => {
     <li className={styles.card}>
       <div className={styles.top}>
         <h3 className='card-header'>{props.location}</h3>
-        <span className={styles.locationAmt}>
-          {props.amount} Locations available
-        </span>
+        <span className={styles.locationAmt}>{props.amount}</span>
       </div>
       <div className={styles.image}>
         <Image

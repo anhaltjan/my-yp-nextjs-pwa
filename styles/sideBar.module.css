@@ -1,0 +1,36 @@
+.imgContainer {
+  display: grid;
+  gap: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-block: 1rem;
+}
+
+.imgWrap {
+  width: 100%;
+  max-width: 300px;
+}
+
+.imgWrap img {
+  border-radius: 10px;
+}
+.exampleList {
+  list-style: none;
+  padding-block: 1rem;
+  line-height: 40px;
+}
+
+.exampleList li::before {
+  content: '🙆🏻';
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--primary-400);
+  display: inline-block;
+  width: 1em;
+  margin-inline-end: 1rem;
+}
+
+.exampleList::placeholder {
+  color: var(--grey-500);
+}

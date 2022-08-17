@@ -12,22 +12,3 @@ footer .copyright {
   font-weight: 100;
   font-size: small;
 }
-
-footer .snsContainer {
-  display: flex;
-  list-style: none;
-  margin-block-start: 1em;
-}
-
-.snsContainer a {
-  color: var(--primary-400);
-}
-
-.snsContainer a:hover {
-  color: var(--primary-500);
-  border-bottom: 1px dotted var(--primary-400);
-}
-
-.snsContainer li {
-  margin-inline: 1rem;
-}

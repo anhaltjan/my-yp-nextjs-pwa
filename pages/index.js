@@ -18,7 +18,7 @@ export default function Home() {
         <ul className='list'>
           <Card
             location='Tokyo'
-            amount='24'
+            amount='1 ward available'
             image='/images/tokyo.jpg'
             link='/tokyo'
           />

@@ -44,7 +44,7 @@ const ContactForm = () => {
         />
 
         <select
-          className={`${styles.formChild} ${styles.formInput}`}
+          className={`${styles.formChild} ${styles.formSelect}`}
           name='length'
           id='time'
         >
@@ -61,7 +61,7 @@ const ContactForm = () => {
         </select>
 
         <select
-          className={`${styles.formChild} ${styles.formInput}`}
+          className={`${styles.formChild} ${styles.formSelect}`}
           name='level'
           id='level'
         >
@@ -76,7 +76,7 @@ const ContactForm = () => {
         </select>
 
         <select
-          className={`${styles.formChild} ${styles.formInput}`}
+          className={`${styles.formChild} ${styles.formSelect}`}
           name='topic'
           id='topic'
           required

@@ -1,46 +1,3 @@
-/* CONTACT COMPONENT */
-
-.contactContent {
-  margin-block-start: 1rem;
-}
-
-.imgContainer {
-  display: grid;
-  gap: 1em;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  padding-block: 1rem;
-}
-
-.imgWrap {
-  width: 100%;
-  max-width: 300px;
-}
-
-.imgWrap img {
-  border-radius: 10px;
-}
-.exampleList {
-  list-style: none;
-  padding-block: 1rem;
-  line-height: 40px;
-}
-
-.exampleList li::before {
-  content: '🙆🏻';
-  font-size: x-large;
-  font-weight: bold;
-  color: var(--primary-400);
-  display: inline-block;
-  width: 1em;
-  margin-inline-end: 1rem;
-}
-
-.exampleList::placeholder {
-  color: var(--grey-500);
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -51,6 +8,16 @@
 }
 
 .formInput {
+  background: var(--black);
+  font-size: 0.9rem;
+  color: var(--grey-600);
+  border: 1px solid var(--grey-700);
+  border-radius: 10px;
+  padding-block: 0.75em;
+  padding-inline: 0.5rem;
+}
+
+.formSelect {
   background: var(--black);
   font-size: 0.9rem;
   color: var(--grey-600);
