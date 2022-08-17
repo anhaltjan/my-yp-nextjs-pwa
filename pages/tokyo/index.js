@@ -10,8 +10,9 @@ const Tokyo = () => {
       <Head>
         <title>YouPoint〘 Tokyo 東京都 〙</title>
       </Head>
-      <ReturnButton page='/' />
+
       <Title title='Tokyo' subtitle='Areas Available' />
+      <ReturnButton page='/' />
       <ul className='list'>
         <Card
           location='Minato City 港区'
