@@ -156,6 +156,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  padding-block-start: 2em;
 }
 
 /* WARD LISTING & LISTINGS */

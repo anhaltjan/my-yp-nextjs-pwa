@@ -1,0 +1,37 @@
+.card {
+  background: var(--grey-800);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.successTitle {
+  font-size: xx-large;
+}
+
+.successMessage {
+  font-size: large;
+  text-align: center;
+  line-height: 40px;
+  margin-block-end: 1em;
+}
+
+.redText {
+  color: rgb(255, 0, 89);
+  letter-spacing: 1.5px;
+  font-size: xx-large;
+}
+
+.redTextSmall {
+  color: rgb(255, 0, 89);
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgb(255, 0, 89);
+}
+
+.emote {
+  font-size: x-large;
+}

@@ -1,5 +1,12 @@
+import SuccessCard from '../components/SuccessCard'
+
+
 const Success = () => {
-  return <div>form Successfully submitted</div>
+  return (
+    <>
+      <SuccessCard />
+    </>
+  )
 }
 
 export default Success
