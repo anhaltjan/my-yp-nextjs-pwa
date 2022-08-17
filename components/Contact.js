@@ -41,8 +41,10 @@ const Contact = () => {
           id='form'
           className={`${styles.form}`}
           data-netlify='true'
-          action={`POST`}
+          method={`POST`}
+          action='/success'
         >
+          <input type='hidden' name='form-name' value='contact' />
           <input
             className={`${styles.formChild} ${styles.formInput}`}
             placeholder='Name (Jan Anhalt)'

@@ -1,0 +1,32 @@
+{
+  "short_name": "YP PWA",
+  "name": "YouPoint PWA",
+  "description": "English assistance in Japan",
+  "icons": [
+    {
+      "src": "/icons/icon-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "/icons/icon-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "/icons/icon-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "/icons/icon-36x36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": ""
+}

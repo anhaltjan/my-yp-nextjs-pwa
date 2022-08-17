@@ -1,23 +1,12 @@
-/** @type {import('next').NextConfig} */
+const withPWA = require('next-pwa')
 
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
-  },
-})
-
-const nextConfig = {
+module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
+    disable: process.env.NODE_ENV === 'development',
+  },
 })
-
-module.exports = nextConfig
