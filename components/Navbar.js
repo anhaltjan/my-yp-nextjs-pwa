@@ -15,7 +15,7 @@ const Navbar = () => {
             <Image
               width={50}
               height={50}
-              src='/images/y_logo_green_200x200.png'
+              src='/images/y_logo_green_solid_200x200.svg'
               alt='YouPoint logo'
             />
             <h1>
