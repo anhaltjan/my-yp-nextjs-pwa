@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Title from '../../components/Title'
 import Link from 'next/link'
 
@@ -8,15 +9,20 @@ import styles from '../../styles/updatePage.module.css'
 export default function Update({ updateData }) {
   return (
     <>
+      <Head>
+        <title>
+          YouPoint〘 {`Update ${updateData.id}`} {updateData.title} 〙
+        </title>
+      </Head>
       <div className={styles.updatePage}>
         <Title title={`Update ${updateData.id}`} subtitle={updateData.title} />
+        <Link href='/updates'>
+          <a className='secondaryBtn fitToContent'>Go back</a>
+        </Link>
         <div className={styles.contentWrap}>
           <div dangerouslySetInnerHTML={{ __html: updateData.contentHtml }} />
         </div>
       </div>
-      <Link href='/updates'>
-        <a className='secondaryBtn fitToContent'>Go back</a>
-      </Link>
     </>
   )
 }

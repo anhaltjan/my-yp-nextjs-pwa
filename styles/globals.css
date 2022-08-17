@@ -47,9 +47,9 @@
   color: var(--grey-400);
   text-align: center;
   background: none;
-  border: 1px solid var(--grey-100);
+  border: 1px solid var(--grey-600);
   border-radius: 5px;
-  padding-block: 0.65em;
+  padding-block: 0.35em;
   padding-inline: 1rem;
 }
 
@@ -114,6 +114,7 @@ body {
 .title-wrap {
   padding-block: 1rem;
   border-bottom: var(--grey-800) 1px solid;
+  margin-block-end: 1rem;
 }
 
 .page-title::first-letter {

@@ -1,0 +1,51 @@
+.card {
+  background: var(--grey-300);
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid var(--grey-700);
+  border-spacing: 0;
+}
+
+.name {
+  font-size: larger;
+  text-transform: capitalize;
+  text-align: left;
+  padding-inline-start: 0.5rem;
+}
+
+.tableRow:nth-child(3),
+.tableRow:nth-child(5),
+.tableRow:nth-child(7) {
+  background: var(--grey-100);
+}
+
+.tableHeader,
+.tableData,
+.link {
+  color: var(--grey-800);
+}
+
+.tableHeader {
+  font-size: large;
+  padding: 0.5rem;
+}
+
+.tableData {
+  padding-inline-start: 1rem;
+  padding-block: 0.25rem;
+}
+
+.tableRow:nth-child(2) {
+  font-weight: 700;
+}
+
+.link {
+  border: 1px solid var(--grey-600);
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+.link:hover {
+  border: 1px dotted var(--grey-900);
+  text-decoration: underline;
+}

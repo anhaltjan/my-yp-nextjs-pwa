@@ -32,6 +32,10 @@
   color: var(--grey-300);
 }
 
+.image img {
+  filter: grayscale(100%) contrast(150%);
+}
+
 .bottom {
   padding: 0.25rem;
 }
