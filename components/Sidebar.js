@@ -2,12 +2,10 @@ import Image from 'next/image'
 import styles from '../styles/sideBar.module.css'
 import Jan from '../public/images/jan.png'
 import Kemmy from '../public/images/kemmy.png'
-import Sns from './sns'
 
 const Sidebar = () => {
   return (
     <div className={styles.contactContent}>
-      <Sns />
       <div className={styles.imgContainer}>
         <div className={styles.imgWrap}>
           <Image

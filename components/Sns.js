@@ -9,7 +9,7 @@ import styles from '../styles/sns.module.css'
 
 const Sns = () => {
   return (
-    <>
+    <div>
       <ul className={styles.snsContainer}>
         <li>
           <a>
@@ -37,7 +37,7 @@ const Sns = () => {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   )
 }
 
