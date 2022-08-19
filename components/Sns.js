@@ -12,27 +12,27 @@ const Sns = () => {
     <div>
       <ul className={styles.snsContainer}>
         <li>
-          <a>
+          <a href={``} target={`_blank`}>
             <BsYoutube size='1.5rem' />
           </a>
         </li>
-        <li>
-          <a>
+        {/*         <li>
+          <a href={``} target={`_blank`}>
             <BsLine size='1.5rem' />
           </a>
-        </li>
+        </li> */}
         <li>
-          <a>
+          <a href={`https://www.facebook.com/youpoint.offical.jp`}>
             <BsFacebook size='1.5rem' />
           </a>
         </li>
         <li>
-          <a>
+          <a href={`https://www.instagram.com/youpoint_/`} target={`_blank`}>
             <BsInstagram size='1.5rem' />
           </a>
         </li>
         <li>
-          <a>
+          <a href={`https://twitter.com/youpoint_`} target={`_blank`}>
             <BsTwitter size='1.75em' />
           </a>
         </li>

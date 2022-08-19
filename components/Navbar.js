@@ -1,14 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/navbar.module.css'
+import Banner from './Banner'
 import { useRouter } from 'next/router'
+
 const Navbar = () => {
   const router = useRouter()
   const currentRoute = router.pathname
 
   return (
     <header className={styles.header}>
-      <div className={styles.banner}></div>
+      <div className={styles.banner}>
+        <Banner />
+      </div>
       <div>
         <Link href='/'>
           <a className={styles.brand}>
