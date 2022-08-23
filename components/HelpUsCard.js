@@ -19,7 +19,7 @@ const HelpUsCard = () => {
         />
       </div>
       <div className={styles.bottom}>
-        <Link href='/contact'>
+        <Link href={`/contact`}>
           <a>
             <button className='primaryBtn fullWidth'>Contact us!</button>
           </a>
