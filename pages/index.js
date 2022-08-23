@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Title from '../components/Title'
 import Card from '../components/Card'
+import HelpUsCard from '../components/helpUsCard'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
             image='/images/tokyo.jpg'
             link='/tokyo'
           />
+          <HelpUsCard />
         </ul>
       </div>
     </>
