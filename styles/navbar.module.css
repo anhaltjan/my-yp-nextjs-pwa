@@ -14,12 +14,8 @@
   text-transform: uppercase;
   margin-left: 1rem;
   font-weight: 800;
-  font-size: x-large;
-  letter-spacing: 1.5px;
-}
-
-.brand h1 .greenText {
   font-size: xx-large;
+  letter-spacing: 3px;
 }
 
 .brand h1:hover {

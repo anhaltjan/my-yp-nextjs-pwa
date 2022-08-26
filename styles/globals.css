@@ -117,10 +117,6 @@ body {
   margin-block-end: 1rem;
 }
 
-.page-title::first-letter {
-  color: var(--primary-400);
-}
-
 .return {
   color: var(--grey-400);
   border: 1px solid var(--grey-200);
